@@ -9,7 +9,7 @@ public class vehicleRequest {
     //Request means we are creating table record
     //No id will be provided bcz we are requesting - database will create by own sequence wise
 
-    @NotNull(message = "Vehicle Name can not be null")
+    @NotBlank(message = "Vehicle Name can not be null")
     private String name;
     @NotNull(message = "Vehicle type can not be null")
     private vehicleType type;
